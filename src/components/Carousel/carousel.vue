@@ -73,38 +73,39 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 
-.carousel-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding-left: 50px;
-  padding-right: 50px;
-}
+.carousel {
+  &-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
-.carousel-item {
-  height: 350px;
-  max-width: 100%;
-  border-radius: 5px;
-  
-  overflow: hidden;
-  display: none;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
+  &-item {
+    height: 350px;
+    max-width: 100%;
+    border-radius: 5px;
+    
+    overflow: hidden;
+    display: none;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 
-  -webkit-box-shadow: 10px 10px 20px 0 rgba(47, 94, 90, 0.2);
-  -moz-box-shadow: 10px 10px 20px 0 rgba(47, 94, 90, 0.2);
-  box-shadow: 10px 10px 20px 0 rgba(47, 94, 90, 0.2);
-}
+    -webkit-box-shadow: 10px 10px 20px 0 rgba(47, 94, 90, 0.2);
+    -moz-box-shadow: 10px 10px 20px 0 rgba(47, 94, 90, 0.2);
+    box-shadow: 10px 10px 20px 0 rgba(47, 94, 90, 0.2);
 
-.carousel-item.active {
-  display: flex;
-  opacity: 1;
-  background-color: lightgray;
-	animation-name: scaleIn;
-	animation-duration: 0.3s;
+    &.active {
+      display: flex;
+      opacity: 1;
+      background-color: lightgray;
+      animation-name: scaleIn;
+      animation-duration: 0.3s;
+    }
+  }
 }
 
 @keyframes fadeIn {
